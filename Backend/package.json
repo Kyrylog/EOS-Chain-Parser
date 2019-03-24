@@ -1,0 +1,33 @@
+{
+  "name": "box-backend",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "nodemon src/server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://gitlab.com/OlegMakarenko/box_sacad_backend.git"
+  },
+  "author": "OlegMakarenko",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://gitlab.com/OlegMakarenko/box_sacad_backend/issues"
+  },
+  "homepage": "https://gitlab.com/OlegMakarenko/box_sacad_backend#readme",
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "eosjs": "^20.0.0-beta3",
+    "express": "^4.14.0",
+    "express-ws": "^4.0.0",
+    "mongodb": "^2.2.16",
+    "mqtt": "^2.18.8",
+    "node-fetch": "^2.3.0",
+    "websocket": "^1.0.28"
+  },
+  "devDependencies": {
+    "nodemon": "^1.18.9"
+  }
+}
