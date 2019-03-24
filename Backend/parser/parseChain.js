@@ -1,3 +1,4 @@
+
 const fetchBlock = require("./fetchBlock");
 const getAccountInfoList = require("./getAccountInfoList");
 const getAccountList = require("./getAccountList");
@@ -19,6 +20,7 @@ const parseChain = ({rpc, formBlock, toBlock}) =>
                     .then( block => 
                         {
                             let accountList = [...getAccountList({block})];
+                        
                             console.log(currentBlockNumber+": ",accountList)
 
                             if(accountList && accountList.length > 0)

@@ -1,10 +1,13 @@
+const getToken = require("./getToken");
+
 const getAccountInfo = ({rpc, account}) =>
 {
     return new Promise((resolve, reject) => 
     {
-        rpc.get_account(account)
-            .then(accountInfo => { resolve(accountInfo); })
-            .catch( (err)=>{ reject("failed to get account info"); } );
+        getToken({account})
+            .then((accountInfo) => {  })
+            .catch( (err)=>{ console.error(err);reject("failed to get account info"); } );
+        resolve(account);
     })
 }
 module.exports = getAccountInfo;
